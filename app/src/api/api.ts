@@ -12,3 +12,13 @@ export const getAcomodacoes = async (): Promise<Acomodacao[]> => {
     throw error;
   }
 }
+
+export const getAcomodacaoId = async (id: number): Promise<Acomodacao | null> => {
+  try {
+    const response: AxiosResponse<Acomodacao> = await axios.get(`${url}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('erro no metodo GET da API', error);
+    throw error;
+  }
+};
