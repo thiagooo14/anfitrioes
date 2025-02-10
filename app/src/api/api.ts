@@ -2,9 +2,6 @@ import axios, { AxiosResponse } from 'axios';
 import { Acomodacao } from '../types/acomodacao';
 
 const url = `http://127.0.0.1:5000/acomodacoes`;
-// const url = `http://127.0.0.1:5000/acomodacoes?acas....`;
-
-// get acomodacao cidade lalala
 
 export const getAcomodacoes = async (cidade?: string): Promise<Acomodacao[]> => {
   try {
