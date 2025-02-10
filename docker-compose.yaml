@@ -1,0 +1,21 @@
+version: '3'
+services:
+  server:
+    build: ./server
+    ports:
+    - "5000:5000"
+    volumes:
+      - ./server:/app
+    environment:
+      - FLASK_ENV=development
+
+  app:
+    build: ./app
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    depends_on:
+      - server
+
