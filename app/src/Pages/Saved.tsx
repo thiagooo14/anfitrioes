@@ -30,13 +30,8 @@ function Saved() {
   return (
     <Box padding={2}>
       {!hasFavorites ? (
-        <Typography
-          variant='h6'
-          color='textSecondary'
-          align='center'
-          sx={{ mt: 2 }}
-        >
-          Nada salvo.
+        <Typography textAlign={'center'} pt={15} variant='h3'>
+          Sem acomodações salvas no favorito
         </Typography>
       ) : (
         <>

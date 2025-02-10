@@ -53,7 +53,6 @@ const CardAcomodacoes = ({ acomodacoes }: CardAcomodacoesProps) => {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
         padding: 4,
       }}
     >

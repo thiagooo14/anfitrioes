@@ -20,4 +20,6 @@ def get_acomodacao(id):
         return make_response(jsonify(acom))
     return make_response(jsonify({'error': 'Acomodação não encontrada'}), 404)
 
+app.run(host="0.0.0.0", port=5000, debug=True)
+
 # app.run()

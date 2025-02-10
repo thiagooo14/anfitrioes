@@ -21,7 +21,7 @@ function Home() {
   return (
     <Box padding={2}>
       <SearchBar value={cidade} onChange={setCidade} />
-      {acomodacoes.length === 0 && <Typography>sem acomodacao</Typography>}
+      {acomodacoes.length === 0 && <Typography textAlign={'center'} pt={15} variant='h3'>sem resultados para a sua busca</Typography>}
       <CardAcomodacao acomodacoes={acomodacoes} />
     </Box>
   );
